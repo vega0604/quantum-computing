@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="/content.css">
     <title>Quantum Computing</title>
   </head>
   <body>
@@ -22,14 +23,35 @@
         <div class="burger" id="burger3"></div>
       </div>
       <ul class="links">
-        <a href="#who">Who</a>
-        <a href="#what">What</a>
-        <a href="#where">Where</a>
-        <a href="#when">When</a>
-        <a href="#why">Why</a>
-        <a href="#how">How</a>
+        <a onclick="move('#who')">Who</a>
+        <a onclick="move('#what')">What</a>
+        <a onclick="move('#where')">Where</a>
+        <a onclick="move('#when')">When</a>
+        <a onclick="move('#why')">Why</a>
+        <a onclick="move('#how')">How</a>
       </ul>
     </header>
-    <script src="/header.js"></script>
+    <div class="content">
+      <div class="container" id="who">
+        <h1>Who</h1>
+      </div>
+      <div class="container" id="what">
+        <h1>What</h1>
+      </div>
+      <div class="container" id="where">
+        <h1>Where</h1>
+      </div>
+      <div class="container" id="when">
+        <h1>When</h1>
+      </div>
+      <div class="container" id="why">
+        <h1>Why</h1>
+      </div>
+      <div class="container" id="how">
+        <h1>How</h1>
+      </div>
+    </div>
   </body>
+  <script src="/header.js"></script>
+  <script src="/move.js"></script>
 </html>
