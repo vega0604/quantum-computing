@@ -1,4 +1,6 @@
 function move(id){
+
+    currentContainer = id
     const element = document.querySelector(id);
     const offset = 16 * 6;
     const bodyRect = document.body.getBoundingClientRect().top;

@@ -23,12 +23,13 @@
         <div class="burger" id="burger3"></div>
       </div>
       <ul class="links">
-        <a onclick="move('#who')">Who</a>
-        <a onclick="move('#what')">What</a>
-        <a onclick="move('#where')">Where</a>
-        <a onclick="move('#when')">When</a>
-        <a onclick="move('#why')">Why</a>
-        <a onclick="move('#how')">How</a>
+        <a onclick="move('#who'); toggle()">Who</a>
+        <a onclick="move('#what'); toggle()">What</a>
+        <a onclick="move('#where'); toggle()">Where</a>
+        <a onclick="move('#when'); toggle()">When</a>
+        <a onclick="move('#why'); toggle()">Why</a>
+        <a onclick="move('#how'); toggle()">How</a>
+        <a onclick="move('#sources'); toggle()">Sources</a>
       </ul>
     </header>
     <div class="content">
@@ -49,6 +50,9 @@
       </div>
       <div class="container" id="how">
         <h1>How</h1>
+      </div>
+      <div class="container" id="sources">
+        <h1>Sources</h1>
       </div>
     </div>
   </body>
