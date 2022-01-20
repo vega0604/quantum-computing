@@ -1,1 +1,2 @@
 # Site about Quantum Computing for Computer Science Project
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b574d27a-36e1-485a-8792-88ce27b6a634/deploy-status)](https://app.netlify.com/sites/quantum-computers/deploys)
