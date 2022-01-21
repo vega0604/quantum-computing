@@ -6,35 +6,51 @@
     color: rgba(24, 23, 23, 1);
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
 }
 
 .container h1 {
     font-size: 40px;
     width: 100%;
+    text-align: left;
 }
 
 .container div {
     width: 100%;
     height: 80%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: start;
     align-items: flex-start;
+    text-align: left;
 }
 
-.container div p {
-    font-size: 20px;
+.info {
+    font-size: 24px;
     width: 65%;
     height: 100%;
 }
 
 .container {
+    position: relative;
     width: 90%;
     min-height: calc(100vh - 6rem);
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
     align-items: center;
+}
+
+@media (max-width: 1031px) {
+    .container div {
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
 }
